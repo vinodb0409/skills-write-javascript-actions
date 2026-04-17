@@ -12,6 +12,7 @@
     "url": "git+https://github.com/vinodb0409/skills-write-javascript-actions.git"
   },
   "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "bugs": {
