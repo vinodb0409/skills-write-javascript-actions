@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 name: Fetch Dad Jokes
 
 on:
@@ -22,3 +23,24 @@ jobs:
           getJoke().then(joke => {
             console.log(`::set-output name=joke::${joke}`);
           });
+=======
+import core from '@actions/core';
+import axios from 'axios';
+
+async function run() {
+  try {
+    const response = await axios.get('https://icanhazdadjoke.com/', {
+      headers: { Accept: 'application/json' }
+    });
+    
+    const joke = response.data.joke;
+    console.log('🎭 Dad Joke:', joke);
+    
+    core.setOutput('joke', joke);
+  } catch (error) {
+    core.setFailed(`Failed to fetch a dad joke: ${error.message}`);
+  }
+}
+
+run();
+>>>>>>> 1aeb389 (Add ncc build script and bundled dist/index.js)
