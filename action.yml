@@ -5,13 +5,6 @@ outputs:
   joke:
     description: "The fetched joke text"
 
-- uses: actions/setup-node@v4
-  with:
-    node-version: 20
-
-- name: Install deps
-  run: npm ci
-
 runs:
   using: node20
   main: dist/index.js
