@@ -14,6 +14,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs"
   "bugs": {
     "url": "https://github.com/vinodb0409/skills-write-javascript-actions/issues"
   },
